@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI CALC - Intelligent Mathematical Computing">
+    <title>AI CALC | Intelligent Mathematical Computing</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background-grid"></div>
+
+    <main class="app">
+
+        <!-- Header -->
+        <header class="header">
+            <div>
+                <div class="brand">
+                    <span class="brand-symbol">⌬</span>
+                    AI CALC
+                </div>
+
+                <p class="subtitle">
+                    Intelligent Mathematical Computing
+                </p>
+            </div>
+
+            <div class="project-badge">
+                <span class="status-dot"></span>
+                AI/ML ENGINEERING PROJECT
+            </div>
+        </header>
+
+
+        <!-- Main Dashboard -->
+        <section class="dashboard">
+
+            <!-- Left Panel -->
+            <aside class="info-panel">
+
+                <div class="panel-heading">
+                    <span class="small-label">SYSTEM</span>
+                    <h1>AI Computation<br>Laboratory</h1>
+                </div>
+
+                <p class="description">
+                    A futuristic mathematical computing interface
+                    designed with a modern AI/ML engineering aesthetic.
+                </p>
+
+
+                <!-- Insights -->
+                <div class="insights-card">
+
+                    <div class="card-header">
+                        <span>COMPUTATION INSIGHTS</span>
+                        <span class="pulse">●</span>
+                    </div>
+
+                    <div class="stat">
+                        <span>STATUS</span>
+                        <strong id="status">READY</strong>
+                    </div>
+
+                    <div class="stat">
+                        <span>OPERATIONS</span>
+                        <strong id="operations">0</strong>
+                    </div>
+
+                    <div class="stat">
+                        <span>LAST RESULT</span>
+                        <strong id="lastResult">—</strong>
+                    </div>
+
+                    <div class="stat">
+                        <span>ENGINE</span>
+                        <strong>JAVASCRIPT</strong>
+                    </div>
+
+                </div>
+
+
+                <!-- Technical Information -->
+                <div class="tech-info">
+
+                    <div class="tech-title">
+                        SYSTEM MODULES
+                    </div>
+
+                    <div class="tech-item">
+                        <span>01</span>
+                        Expression Parser
+                    </div>
+
+                    <div class="tech-item">
+                        <span>02</span>
+                        Arithmetic Engine
+                    </div>
+
+                    <div class="tech-item">
+                        <span>03</span>
+                        Input Handler
+                    </div>
+
+                    <div class="tech-item">
+                        <span>04</span>
+                        Result Processor
+                    </div>
+
+                </div>
+
+            </aside>
+
+
+            <!-- Calculator -->
+            <section class="calculator-wrapper">
+
+                <div class="calculator">
+
+                    <!-- Calculator Header -->
+                    <div class="calculator-top">
+                        <span>CALCULATION CORE</span>
+                        <span class="core-indicator">
+                            ONLINE
+                        </span>
+                    </div>
+
+
+                    <!-- Display -->
+                    <div class="display">
+
+                        <div class="expression" id="expression">
+                            0
+                        </div>
+
+                        <div class="result" id="display">
+                            0
+                        </div>
+
+                    </div>
+
+
+                    <!-- Buttons -->
+                    <div class="buttons">
+
+                        <button class="function" data-action="clear">
+                            C
+                        </button>
+
+                        <button class="function" data-action="delete">
+                            DEL
+                        </button>
+
+                        <button class="function" data-action="percent">
+                            %
+                        </button>
+
+                        <button class="operator" data-value="/">
+                            ÷
+                        </button>
+
+
+                        <button data-value="7">7</button>
+                        <button data-value="8">8</button>
+                        <button data-value="9">9</button>
+
+                        <button class="operator" data-value="*">
+                            ×
+                        </button>
+
+
+                        <button data-value="4">4</button>
+                        <button data-value="5">5</button>
+                        <button data-value="6">6</button>
+
+                        <button class="operator" data-value="-">
+                            −
+                        </button>
+
+
+                        <button data-value="1">1</button>
+                        <button data-value="2">2</button>
+                        <button data-value="3">3</button>
+
+                        <button class="operator" data-value="+">
+                            +
+                        </button>
+
+
+                        <button class="zero" data-value="0">
+                            0
+                        </button>
+
+                        <button data-value=".">
+                            .
+                        </button>
+
+                        <button class="equals" data-action="calculate">
+                            =
+                        </button>
+
+                    </div>
+
+
+                    <!-- History -->
+                    <div class="history">
+
+                        <div class="history-header">
+                            <span>CALCULATION LOG</span>
+                            <button id="clearHistory">
+                                CLEAR
+                            </button>
+                        </div>
+
+                        <div id="historyList" class="history-list">
+                            <span class="empty-history">
+                                No calculations yet
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </section>
+
+
+        <!-- Footer -->
+        <footer>
+            Built with HTML • CSS • JavaScript
+            <span>|</span>
+            AI/ML Engineering Project
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
